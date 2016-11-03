@@ -2,7 +2,7 @@ from qiniu import Auth, put_file, etag, urlsafe_base64_encode
 import qiniu.config
 import os
 
-assess_key = os.environ.get('QINIUAk')
+assess_key = os.environ.get('QINIUAK')
 secret_key = os.environ.get('QINIUSK')
 
 q = Auth(assess_key, secret_key)

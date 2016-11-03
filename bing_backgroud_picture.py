@@ -32,7 +32,7 @@ def save_local(data, base_path, date = time.time()):
 
 
 def save_qiniu(data, image_name):
-    assess_key = os.environ.get('QINIUAk')
+    assess_key = os.environ.get('QINIUAK')
     secret_key = os.environ.get('QINIUSK')
 
     q = Auth(assess_key, secret_key)
