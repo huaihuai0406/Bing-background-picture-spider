@@ -38,7 +38,7 @@ def save_qiniu(data, image_name):
     q = Auth(assess_key, secret_key)
 
     bucket_name = 'bing-background-picture'
-    key = image_name
+    key = os.path.join(os.sep, date, image_name)
     token = q.upload_token(bucket_name, key, 3600)
     ret, info = put_data(token, key, data)
     print info
